@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giorgio Martucci</title>
+    <title>Giorgio Martucci - Software Engineer</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
     <style>
@@ -46,6 +46,32 @@
         .subtitle {
             color: #666;
             font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .cv-button:hover {
+            background-color: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .cv-button .icon {
+            width: 18px;
+            height: 18px;
         }
 
         .container {
@@ -92,10 +118,30 @@
         .contact-list li {
             padding: 0.5rem 0;
             border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .contact-list li:last-child {
             border-bottom: none;
+        }
+
+        .contact-list a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-list a:hover {
+            color: #3498db;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: #666;
         }
 
         footer {
@@ -111,7 +157,6 @@
         <img src="assets/profile.jpg" alt="Foto profilo" class="avatar">
         <h1>Giorgio Martucci</h1>
         <p class="subtitle">Software Engineer</p>
-
         <a href="cv.pdf" download class="cv-button">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -131,8 +176,19 @@
         <section class="section">
             <h2>Contact</h2>
             <ul class="contact-list">
-                <li><strong>Email:</strong> giorgiomartucci02@gmail.com</li>
-                <li><strong>GitHub:</strong> https://github.com/ThetaLogN</li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <strong>Email:</strong> <a href="mailto:giorgiomartucci02@gmail.com">giorgiomartucci02@gmail.com</a>
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <strong>GitHub:</strong> <a href="https://github.com/ThetaLogN" target="_blank" rel="noopener noreferrer">github.com/ThetaLogN</a>
+                </li>
             </ul>
         </section>
     </div>
